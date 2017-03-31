@@ -16,6 +16,8 @@
 		81F9260C1E8EDFC1003237F9 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 81F9260B1E8EDFC1003237F9 /* tessdata */; };
 		81F9260F1E8EEB60003237F9 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */; };
 		81F926101E8EEB60003237F9 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9260E1E8EEB60003237F9 /* RestKit.framework */; };
+		81F926171E8EFB89003237F9 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F926151E8EF4F0003237F9 /* TesseractOCR.framework */; };
+		81F926191E8EFB89003237F9 /* ALCameraViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F926181E8EFB89003237F9 /* ALCameraViewController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		81F9260B1E8EDFC1003237F9 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
 		81F9260E1E8EEB60003237F9 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		81F926131E8EF26E003237F9 /* ALCameraViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ALCameraViewController.framework; path = "Pods/../build/Release-iphoneos/ALCameraViewController/ALCameraViewController.framework"; sourceTree = "<group>"; };
+		81F926151E8EF4F0003237F9 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = "DerivedData/Keimeno/Build/Products/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework"; sourceTree = "<group>"; };
+		81F926181E8EFB89003237F9 /* ALCameraViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ALCameraViewController.framework; path = "DerivedData/Keimeno/Build/Products/Debug-iphoneos/ALCameraViewController/ALCameraViewController.framework"; sourceTree = "<group>"; };
 		D05CB6FC151547DE0EB4923D /* Pods_Keimeno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keimeno.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0BFC2FB3DA48A7009084E8 /* Pods-Keimeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keimeno.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keimeno/Pods-Keimeno.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F926191E8EFB89003237F9 /* ALCameraViewController.framework in Frameworks */,
+				81F926171E8EFB89003237F9 /* TesseractOCR.framework in Frameworks */,
 				81F9260F1E8EEB60003237F9 /* TextToSpeechV1.framework in Frameworks */,
 				81F926101E8EEB60003237F9 /* RestKit.framework in Frameworks */,
 				7128A1CF357FBB9DE7258334 /* Pods_Keimeno.framework in Frameworks */,
@@ -92,6 +99,9 @@
 		C642D6FB7CB98C06EF2B6690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81F926181E8EFB89003237F9 /* ALCameraViewController.framework */,
+				81F926151E8EF4F0003237F9 /* TesseractOCR.framework */,
+				81F926131E8EF26E003237F9 /* ALCameraViewController.framework */,
 				81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */,
 				81F9260E1E8EEB60003237F9 /* RestKit.framework */,
 				D05CB6FC151547DE0EB4923D /* Pods_Keimeno.framework */,
@@ -291,6 +301,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -340,6 +351,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -367,8 +379,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ALCameraViewController",
+					"$(PROJECT_DIR)/DerivedData/Keimeno/Build/Products/Debug-iphoneos/TesseractOCRiOS",
+					"$(PROJECT_DIR)/DerivedData/Keimeno/Build/Products/Debug-iphoneos/ALCameraViewController",
 				);
 				INFOPLIST_FILE = Keimeno/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pranav-Madanahalli.Keimeno";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,8 +401,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ALCameraViewController",
+					"$(PROJECT_DIR)/DerivedData/Keimeno/Build/Products/Debug-iphoneos/TesseractOCRiOS",
+					"$(PROJECT_DIR)/DerivedData/Keimeno/Build/Products/Debug-iphoneos/ALCameraViewController",
 				);
 				INFOPLIST_FILE = Keimeno/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pranav-Madanahalli.Keimeno";
 				PRODUCT_NAME = "$(TARGET_NAME)";
