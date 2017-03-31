@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7128A1CF357FBB9DE7258334 /* Pods_Keimeno.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05CB6FC151547DE0EB4923D /* Pods_Keimeno.framework */; };
 		81F925F61E8ED407003237F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F925F51E8ED407003237F9 /* AppDelegate.swift */; };
 		81F925F81E8ED407003237F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F925F71E8ED407003237F9 /* ViewController.swift */; };
 		81F925FB1E8ED407003237F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F925F91E8ED407003237F9 /* Main.storyboard */; };
 		81F925FD1E8ED407003237F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F925FC1E8ED407003237F9 /* Assets.xcassets */; };
 		81F926001E8ED407003237F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F925FE1E8ED407003237F9 /* LaunchScreen.storyboard */; };
+		81F9260C1E8EDFC1003237F9 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 81F9260B1E8EDFC1003237F9 /* tessdata */; };
+		81F9260F1E8EEB60003237F9 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */; };
+		81F926101E8EEB60003237F9 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9260E1E8EEB60003237F9 /* RestKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		227E26DD1E8A3D11DD4E7D59 /* Pods-Keimeno.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keimeno.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keimeno/Pods-Keimeno.debug.xcconfig"; sourceTree = "<group>"; };
 		81F925F21E8ED407003237F9 /* Keimeno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keimeno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F925F51E8ED407003237F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F925F71E8ED407003237F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		81F925FC1E8ED407003237F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F925FF1E8ED407003237F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81F926011E8ED407003237F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F9260B1E8EDFC1003237F9 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		81F9260E1E8EEB60003237F9 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		D05CB6FC151547DE0EB4923D /* Pods_Keimeno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keimeno.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0BFC2FB3DA48A7009084E8 /* Pods-Keimeno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keimeno.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keimeno/Pods-Keimeno.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F9260F1E8EEB60003237F9 /* TextToSpeechV1.framework in Frameworks */,
+				81F926101E8EEB60003237F9 /* RestKit.framework in Frameworks */,
+				7128A1CF357FBB9DE7258334 /* Pods_Keimeno.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3983D1980BD5B8F34214C7E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				227E26DD1E8A3D11DD4E7D59 /* Pods-Keimeno.debug.xcconfig */,
+				FE0BFC2FB3DA48A7009084E8 /* Pods-Keimeno.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		81F925E91E8ED407003237F9 = {
 			isa = PBXGroup;
 			children = (
 				81F925F41E8ED407003237F9 /* Keimeno */,
 				81F925F31E8ED407003237F9 /* Products */,
+				3983D1980BD5B8F34214C7E9 /* Pods */,
+				C642D6FB7CB98C06EF2B6690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +80,23 @@
 			children = (
 				81F925F51E8ED407003237F9 /* AppDelegate.swift */,
 				81F925F71E8ED407003237F9 /* ViewController.swift */,
+				81F9260B1E8EDFC1003237F9 /* tessdata */,
 				81F925F91E8ED407003237F9 /* Main.storyboard */,
 				81F925FC1E8ED407003237F9 /* Assets.xcassets */,
 				81F925FE1E8ED407003237F9 /* LaunchScreen.storyboard */,
 				81F926011E8ED407003237F9 /* Info.plist */,
 			);
 			path = Keimeno;
+			sourceTree = "<group>";
+		};
+		C642D6FB7CB98C06EF2B6690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F9260D1E8EEB60003237F9 /* TextToSpeechV1.framework */,
+				81F9260E1E8EEB60003237F9 /* RestKit.framework */,
+				D05CB6FC151547DE0EB4923D /* Pods_Keimeno.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81F926041E8ED407003237F9 /* Build configuration list for PBXNativeTarget "Keimeno" */;
 			buildPhases = (
+				EC4F9E476CB1D407F635D528 /* [CP] Check Pods Manifest.lock */,
 				81F925EE1E8ED407003237F9 /* Sources */,
 				81F925EF1E8ED407003237F9 /* Frameworks */,
 				81F925F01E8ED407003237F9 /* Resources */,
+				8C8480A6CD78607295378A17 /* [CP] Embed Pods Frameworks */,
+				A863B9C267D2E9231AC6178A /* [CP] Copy Pods Resources */,
+				81F926111E8EEB9E003237F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,12 +164,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F926001E8ED407003237F9 /* LaunchScreen.storyboard in Resources */,
+				81F9260C1E8EDFC1003237F9 /* tessdata in Resources */,
 				81F925FD1E8ED407003237F9 /* Assets.xcassets in Resources */,
 				81F925FB1E8ED407003237F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81F926111E8EEB9E003237F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TextToSpeechV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		8C8480A6CD78607295378A17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keimeno/Pods-Keimeno-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A863B9C267D2E9231AC6178A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keimeno/Pods-Keimeno-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4F9E476CB1D407F635D528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81F925EE1E8ED407003237F9 /* Sources */ = {
@@ -257,9 +360,14 @@
 		};
 		81F926051E8ED407003237F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 227E26DD1E8A3D11DD4E7D59 /* Pods-Keimeno.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LVUDU2WD93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Keimeno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pranav-Madanahalli.Keimeno";
@@ -270,9 +378,14 @@
 		};
 		81F926061E8ED407003237F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0BFC2FB3DA48A7009084E8 /* Pods-Keimeno.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LVUDU2WD93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Keimeno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pranav-Madanahalli.Keimeno";
@@ -300,6 +413,7 @@
 				81F926061E8ED407003237F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
